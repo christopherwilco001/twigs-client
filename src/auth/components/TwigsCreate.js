@@ -38,8 +38,8 @@ class CreateTwig extends Component {
        }
      }
    })
-     .then(() => alert(`You created ${this.state.name}`, 'success'))
-     .then(() => history.push('/'))
+     .then(() => alert(`You created ${this.state.name} twig!`, 'success'))
+     .then(() => history.push('/twigs'))
      .catch(error => {
        console.error(error)
        this.setState({ name: '', flex: '', shoots: '', pattern: '' })

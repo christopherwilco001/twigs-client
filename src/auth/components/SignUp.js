@@ -44,7 +44,6 @@ class SignUp extends Component {
       <Form className='form' onSubmit={this.onSignUp}>
         <h3>Sign Up</h3>
         <Form.Group controlId="email">
-          <Form.Label>Email address</Form.Label>
           <Form.Control
             type="email"
             placeholder="Enter email"
@@ -55,7 +54,6 @@ class SignUp extends Component {
           />
         </Form.Group>
         <Form.Group controlId="password">
-          <Form.Label>Password</Form.Label>
           <Form.Control
             type="password"
             placeholder="Enter password"
@@ -66,7 +64,6 @@ class SignUp extends Component {
           />
         </Form.Group>
         <Form.Group controlId="password">
-          <Form.Label>Password</Form.Label>
           <Form.Control
             required
             name="passwordConfirmation"

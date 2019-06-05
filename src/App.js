@@ -9,7 +9,9 @@ import SignIn from './auth/components/SignIn'
 import SignOut from './auth/components/SignOut'
 import ChangePassword from './auth/components/ChangePassword'
 import TwigsCreate from './auth/components/TwigsCreate'
-import TwigsEdit from './auth/components/TwigsEdit'
+// import TwigsEdit from './auth/components/TwigsEdit'
+import TwigsUpdate from './auth/components/TwigsUpdate'
+import Twigs from './auth/components/Twigs'
 
 import Alert from 'react-bootstrap/Alert'
 
@@ -45,6 +47,12 @@ class App extends Component {
           </Alert>
         ))}
         <main className="container">
+          <Route exact path='/' render={() => (
+            ''
+          )} />
+          <Route exact path='/twigs' render={() => (
+            <Twigs user={user} alert={this.alert} />
+          )} />
           <Route path='/sign-up' render={() => (
             <SignUp alert={this.alert} setUser={this.setUser} />
           )} />
@@ -60,8 +68,8 @@ class App extends Component {
           <AuthenticatedRoute user={user} path='/create-twig' render={() => (
             <TwigsCreate alert={this.alert} user={user} />
           )} />
-          <AuthenticatedRoute user={user} path='/edit-twig' render={() => (
-            <TwigsEdit alert={this.alert} user={user} />
+          <AuthenticatedRoute user={user} path='/edit-twig/:id' render={() => (
+            <TwigsUpdate alert={this.alert} user={user} />
           )} />
         </main>
       </React.Fragment>
