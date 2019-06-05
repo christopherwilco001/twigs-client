@@ -42,10 +42,9 @@ class SignIn extends Component {
       <Form className='form' onSubmit={this.onSignIn}>
         <h3>Sign In</h3>
         <Form.Group controlId="email">
-          <Form.Label>Email address</Form.Label>
           <Form.Control
             type="email"
-            placeholder="Enter email"
+            placeholder="Enter Email"
             required
             name="email"
             value={email}
@@ -53,10 +52,9 @@ class SignIn extends Component {
           />
         </Form.Group>
         <Form.Group controlId="password">
-          <Form.Label>Password</Form.Label>
           <Form.Control
             type="password"
-            placeholder="Enter password"
+            placeholder="Enter Password"
             required
             name="password"
             value={password}
@@ -64,12 +62,13 @@ class SignIn extends Component {
           />
         </Form.Group>
         <Button type="submit">Sign In</Button>
-        <Form.Text className="text-danger mt-3">
-          Do <strong>not</strong> use real emails or passwords. Seriously, don&rsquo;t do it!
-        </Form.Text>
       </Form>
     )
   }
 }
+
+// <Form.Text className="text-danger mt-3">
+//   Do <strong>not</strong> use real emails or passwords. Seriously, don&rsquo;t do it!
+// </Form.Text>
 
 export default withRouter(SignIn)

@@ -5,6 +5,8 @@ import './Header.scss'
 
 const authenticatedOptions = (
   <React.Fragment>
+    <Nav.Link href="#create-twig">Build Twigs</Nav.Link>
+    <Nav.Link href="#edit-twig">Edit Twigs</Nav.Link>
     <Nav.Link href="#change-password">Change Password</Nav.Link>
     <Nav.Link href="#sign-out">Sign Out</Nav.Link>
   </React.Fragment>
@@ -12,15 +14,15 @@ const authenticatedOptions = (
 
 const unauthenticatedOptions = (
   <React.Fragment>
-    <Nav.Link href="#sign-up">Sign Up</Nav.Link>
+    <Nav.Link href="#sign-up">Register</Nav.Link>
     <Nav.Link href="#sign-in">Sign In</Nav.Link>
   </React.Fragment>
 )
 
 const Header = ({ user }) => (
   <header className="main-header">
-    <Navbar collapseOnSelect bg="primary" expand="md" variant="dark">
-      <Navbar.Brand href="#home">App Name</Navbar.Brand>
+    <Navbar collapseOnSelect bg="dark" expand="md" variant="dark">
+      <Navbar.Brand href="#home">Twigs</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">

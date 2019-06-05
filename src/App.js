@@ -8,6 +8,8 @@ import SignUp from './auth/components/SignUp'
 import SignIn from './auth/components/SignIn'
 import SignOut from './auth/components/SignOut'
 import ChangePassword from './auth/components/ChangePassword'
+import TwigsCreate from './auth/components/TwigsCreate'
+import TwigsEdit from './auth/components/TwigsEdit'
 
 import Alert from 'react-bootstrap/Alert'
 
@@ -54,6 +56,12 @@ class App extends Component {
           )} />
           <AuthenticatedRoute user={user} path='/change-password' render={() => (
             <ChangePassword alert={this.alert} user={user} />
+          )} />
+          <AuthenticatedRoute user={user} path='/create-twig' render={() => (
+            <TwigsCreate alert={this.alert} user={user} />
+          )} />
+          <AuthenticatedRoute user={user} path='/edit-twig' render={() => (
+            <TwigsEdit alert={this.alert} user={user} />
           )} />
         </main>
       </React.Fragment>
