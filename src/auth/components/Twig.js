@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import ListGroup from 'react-bootstrap/ListGroup'
 import apiUrl from '../../apiConfig'
 import Button from 'react-bootstrap/Button'
-class Twigs extends Component {
+class Twig extends Component {
   constructor () {
     super()
 
@@ -82,4 +82,4 @@ class Twigs extends Component {
 //   </ListGroup.Item>
 // ))}
 
-export default Twigs
+export default Twig

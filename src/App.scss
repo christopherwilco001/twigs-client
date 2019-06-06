@@ -1,7 +1,21 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://i.imgur.com/QcdQaMB.jpg");
+  // background-size: cover;
+}
+
 $success: #c7f282;
 $warning: #f1e681;
 $error: #f08181;
 $charcoal: #ccc;
+
+.content {
+  background-image: url("https://i.imgur.com/M1iHkVi.jpg");
+  background-position: right;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
 
 .flash-success,
 .flash-warning,
@@ -32,6 +46,20 @@ $charcoal: #ccc;
 .form {
   margin: 15% auto 0;
   max-width: 25em;
+}
+
+h3  {
+  color: orange;
+}
+
+.h5 {
+  color: black;
+  font-size: 25px;
+}
+
+h6  {
+  color: orange;
+  font-weight: bolder;
 }
 
 .alert {

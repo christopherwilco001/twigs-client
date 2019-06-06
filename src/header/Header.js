@@ -5,6 +5,7 @@ import './Header.scss'
 
 const authenticatedOptions = (
   <React.Fragment>
+    <Nav.Link href="#twigs">My Twigs</Nav.Link>
     <Nav.Link href="#create-twig">Build Twigs</Nav.Link>
     <Nav.Link href="#change-password">Change Password</Nav.Link>
     <Nav.Link href="#sign-out">Sign Out</Nav.Link>

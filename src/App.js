@@ -9,9 +9,9 @@ import SignIn from './auth/components/SignIn'
 import SignOut from './auth/components/SignOut'
 import ChangePassword from './auth/components/ChangePassword'
 import TwigsCreate from './auth/components/TwigsCreate'
-// import TwigsEdit from './auth/components/TwigsEdit'
 import TwigsUpdate from './auth/components/TwigsUpdate'
 import Twigs from './auth/components/Twigs'
+import Twig from './auth/components/Twig'
 
 import Alert from 'react-bootstrap/Alert'
 
@@ -47,11 +47,14 @@ class App extends Component {
           </Alert>
         ))}
         <main className="container">
-          <Route exact path='/' render={() => (
-            ''
+          <Route exact path='/home' render={() => (
+            <p>You <strong>miss</strong> 100% of the shots you <strong>dont</strong> take. -Wayne Gretzky-</p>
           )} />
           <Route exact path='/twigs' render={() => (
             <Twigs user={user} alert={this.alert} />
+          )} />
+          <AuthenticatedRoute user={user} path='/twigs' render={() => (
+            <Twig alert={this.alert} user={user} />
           )} />
           <Route path='/sign-up' render={() => (
             <SignUp alert={this.alert} setUser={this.setUser} />
