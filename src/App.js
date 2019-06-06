@@ -47,10 +47,10 @@ class App extends Component {
         ))}
         <main className="container">
           <Route exact path='/home' render={() => (
-            <p>You <strong>miss</strong> 100% of the shots you <strong>dont</strong> take. -Wayne Gretzky-</p>
+            <p className='text-white'>You <strong>miss</strong> 100% of the shots you <strong>dont</strong> take. -Wayne Gretzky-</p>
           )} />
           <Route exact path='/' render={() => (
-            <p>You <strong>miss</strong> 100% of the shots you <strong>dont</strong> take. -Wayne Gretzky-</p>
+            <p className='text-white'>You <strong>miss</strong> 100% of the shots you <strong>dont</strong> take. -Wayne Gretzky-</p>
           )} />
           <AuthenticatedRoute user={user} path='/twigs' render={() => (
             <Twigs user={user} alert={this.alert} />

@@ -1,46 +1,26 @@
 body {
-  width: 100vw;
-  height: 100vh;
-  background-image: url("https://i.imgur.com/QcdQaMB.jpg");
-  // background-size: cover;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("https://i.imgur.com/QcdQaMB.jpg");
+  background-size: cover;
 }
 
-$success: #c7f282;
-$warning: #f1e681;
-$error: #f08181;
-$charcoal: #ccc;
 
 .content {
-  background-image: url("https://i.imgur.com/M1iHkVi.jpg");
-  background-position: right;
-  opacity: 0.8;
+  padding: 16px;
+  position: relative;
   margin-bottom: 20px;
-}
-
-.flash-success,
-.flash-warning,
-.flash-error {
-  border: 1px solid $charcoal;
-  display: block;
-  left: 25%;
-  padding: 30px;
-  position: fixed;
-  text-align: center;
-  top: 15%;
-  width: 50%;
-  z-index: 1;
-}
-
-.flash-success {
-  background-color: $success;
-}
-
-.flash-warning {
-  background-color: $warning;
-}
-
-.flash-error {
-  background-color: $error;
+  &::before {
+    background-image: url("https://i.imgur.com/M1iHkVi.jpg");
+    background-position: left -250px top -200px;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    opacity: .5;
+  }
 }
 
 .form {

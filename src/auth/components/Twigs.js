@@ -1,9 +1,10 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component } from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
-import ListGroup from 'react-bootstrap/ListGroup'
+// import ListGroup from 'react-bootstrap/ListGroup'
 import apiUrl from '../../apiConfig'
 import Button from 'react-bootstrap/Button'
+// import Card from 'react-bootstrap/Card'
 class Twigs extends Component {
   constructor () {
     super()
@@ -54,23 +55,27 @@ class Twigs extends Component {
    const { user } = this.props
    const { twigs } = this.state
    return (
-     <Fragment>
-       <h3>My Twigs</h3>
-       <ListGroup>
-         { user && twigs.map(twig => (
-           <ListGroup.Item key={twig.id} className= "content">
-             <span className="h5 d-block"><strong className= "unit">Name:</strong> <h6> {twig.name}</h6></span>
-             <span className="h5 d-block"><strong className= "unit">Flex:</strong>  <h6>{twig.flex}</h6></span>
-             <span className="h5 d-block"> <strong className= "unit">Shoots:</strong>  <h6>{twig.shoots}</h6></span>
-             <span className="h5 d-block"><strong className= "unit">Pattern:</strong>  <h6>{twig.pattern}</h6></span>
+     <section className="row">
+       <h3 className="col-12">My Twigs</h3>
+       { user && twigs.map(twig => (
+         <div className="col-md-6 col-lg-4" key={twig.id}>
+           <div className="content">
+             <h5><strong>Name:</strong> </h5>
+             <h6> {twig.name}</h6>
+             <h5><strong>Flex:</strong>  </h5>
+             <h6>{twig.flex}</h6>
+             <h5> <strong>Shoots:</strong>  </h5>
+             <h6>{twig.shoots}</h6>
+             <h5><strong>Pattern:</strong>  </h5>
+             <h6>{twig.pattern}</h6>
 
              <Link to={ '/edit-twig/' + twig.id }><Button variant="dark">Update Twig</Button></Link>
 
              <Button variant="outline-danger" onClick={() => this.destroy(twig.id)}>Delete Twig</Button>
-           </ListGroup.Item>
-         )) }
-       </ListGroup>
-     </Fragment>
+           </div>
+         </div>
+       )) }
+     </section>
    )
  }
 }
