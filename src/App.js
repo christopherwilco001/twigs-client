@@ -11,7 +11,6 @@ import ChangePassword from './auth/components/ChangePassword'
 import TwigsCreate from './auth/components/TwigsCreate'
 import TwigsUpdate from './auth/components/TwigsUpdate'
 import Twigs from './auth/components/Twigs'
-// import Twig from './auth/components/Twig'
 
 import Alert from 'react-bootstrap/Alert'
 

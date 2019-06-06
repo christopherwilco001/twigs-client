@@ -64,7 +64,7 @@ class Twigs extends Component {
              <span className="h5 d-block"> <strong className= "unit">Shoots:</strong>  <h6>{twig.shoots}</h6></span>
              <span className="h5 d-block"><strong className= "unit">Pattern:</strong>  <h6>{twig.pattern}</h6></span>
 
-             <Link to={ '/edit-twig/' + twig.id }><Button variant="secondary">Update Twig</Button></Link>
+             <Link to={ '/edit-twig/' + twig.id }><Button variant="dark">Update Twig</Button></Link>
 
              <Button variant="outline-danger" onClick={() => this.destroy(twig.id)}>Delete Twig</Button>
            </ListGroup.Item>

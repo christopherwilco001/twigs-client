@@ -104,11 +104,7 @@ class CreateTwig extends Component {
            onChange={this.handleChange}
          />
        </Form.Group>
-       <Button variant="outline-dark" type="submit" className="m-1">Submit</Button>
-       <Button variant="primary" type="button" className="m-1" onClick={this.resetForm}>
-         Reset
-       </Button>
-       <Button variant="outline-danger" type="submit" className="m-1">Delete</Button>
+       <Button variant="primary" type="submit" className="m-1">Submit</Button>
      </Form>
    )
  }
