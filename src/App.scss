@@ -1,6 +1,6 @@
 body {
   min-height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("https://i.imgur.com/QcdQaMB.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("https://i.imgur.com/QcdQaMB.jpg");
   background-size: cover;
 }
 
@@ -28,18 +28,20 @@ body {
   max-width: 25em;
 }
 
-h3  {
+h2, h3  {
   color: orange;
+  font-family: 'Cardo', serif;
+  font-size: 40px;
 }
 
-.h5 {
-  color: black;
-  font-size: 25px;
+h5  {
+  color: white;
+  font-size: 20px;
 }
+
 
 h6  {
   color: orange;
-  font-weight: bolder;
 }
 
 .alert {

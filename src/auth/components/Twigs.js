@@ -26,7 +26,9 @@ class Twigs extends Component {
       .then(res => {
         this.setState({ twigs: res.data.twigs })
       })
-      .catch(console.error)
+      .catch(() => {
+        alert('Something went wrong, try again', 'danger')
+      })
   }
 
  destroy = (id) => {
@@ -47,8 +49,10 @@ class Twigs extends Component {
          .then(res => {
            this.setState({ twigs: res.data.twigs })
          })
-         .then(() => this.props.alert(`${this.state.name} twig has been deleted!`, 'success'))
-         .catch(console.error)
+         .then(() => this.props.alert('Twig has been deleted!', 'success'))
+         .catch(() => {
+           alert('Something went wrong, try again', 'danger')
+         })
      })
  }
  render () {

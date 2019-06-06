@@ -28,8 +28,7 @@ class SignIn extends Component {
       .then(res => setUser(res.data.user))
       .then(() => alert(messages.signInSuccess, 'success'))
       .then(() => history.push('/twigs'))
-      .catch(error => {
-        console.error(error)
+      .catch(() => {
         this.setState({ email: '', password: '' })
         alert(messages.signInFailure, 'danger')
       })
