@@ -11,6 +11,10 @@ Our app allows a user to have their own specific authentication through sign up.
 Once signed up you can sign in, the user can change then their password, and sign out.
 While signed in, a user is able to create, delete and update a "Twig".
 
+## Screenshot
+
+(https://media.git.generalassemb.ly/user/19628/files/8f62c480-8904-11e9-865e-704d3fdddcfe)
+
 ## Wireframe & ERD
 
 https://i.imgur.com/S8BQkBG.jpg
