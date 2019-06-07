@@ -13,7 +13,7 @@ While signed in, a user is able to create, delete and update a "Twig".
 
 ## Screenshot
 
-(https://media.git.generalassemb.ly/user/19628/files/8f62c480-8904-11e9-865e-704d3fdddcfe)
+<img width="1440" alt="twigs-screenshot" src= "https://user-images.githubusercontent.com/48266697/59107035-c84f6900-8905-11e9-8adf-64908332224e.png"
 
 ## Wireframe & ERD
 
